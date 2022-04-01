@@ -1,0 +1,39 @@
+@import "../../../Styles/Style.scss";
+.first-container {
+    .firstLeft{
+        img{
+            width: 100%;
+        }
+    }
+  .firstRight {
+    h1 {
+      font-size: 4rem;
+      padding: 24px 0px 8px 0px;
+      text-shadow: 2px 2px 3px #73bfcf;
+      @media screen and (max-width: 992px) {
+        font-size: 3rem;
+        padding: 0px;
+      }
+      @media screen and (max-width:768px){
+        font-size: 2rem;
+        padding: 0px;
+      }
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 16px;
+      color: $paragraph-color;
+      padding-top: 24px;
+      @media screen and (max-width:768px){
+        font-size: 14px;
+        padding-top: 10px;
+      }
+    }
+    .secondText {
+      padding: 14px 0px 10px 0px;
+    }
+  }
+}

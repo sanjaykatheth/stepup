@@ -1,0 +1,84 @@
+@import '../../../Styles/Style.scss';
+.second-container {
+  .head {
+    padding: 4rem 0px 5rem 0px;
+    h4 {
+      font-weight: 400;
+      font-size: 42px;
+    }
+  }
+  .leftContainer {
+   
+    ul {
+      list-style-type: square;
+      @media only screen and (max-width: 992px) {
+        list-style: none;
+        padding:0px;
+      }
+      li{
+        padding: 10px 14px;
+        @media only screen and (max-width: 992px) {
+          font-size: 14px;
+        }
+      }
+    
+    }
+    .arrow img {
+      width: 100px;
+      object-fit: cover;
+    }
+    .img p {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 16px 46px;
+      @media only screen and (max-width: 992px) {
+        padding: 16px 46px;
+        font-size: 18px;
+      }
+    }
+    .leftImg {
+      .img {
+        width: 214px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .rightContainer {
+    .rightContainer1 {
+      ul {
+        list-style-type: none;
+        li {
+          &:not(:first-child) {
+            border: 2px solid #0087b1;
+            padding: 20px 10px;
+            box-shadow: 2px 1px 5px -1px #9a9aa3;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+    .rightContainer2 {
+      .verticleDivider {
+        height: 202px;
+        border-left: 4px solid #0087b1;
+      }
+      .verticleArrow img {
+        width: 128px;
+      }
+      .iconText .icon img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+      }
+    
+    }
+  }
+  .content{
+    p{
+      font-size: 15px;
+      color: $paragraph-color;
+    }
+  }
+}
